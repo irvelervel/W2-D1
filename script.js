@@ -121,3 +121,48 @@ let newVariable = 100
 const fixedValue = newVariable + 1 // 101
 
 console.log(fixedValue)
+
+// VALORI BOOLEANI
+// Esprimono un valore logico di TRUE o FALSE
+
+let canYouDrive = true
+let doYouSmoke = false
+
+let numero1 = 5
+let numero2 = 15
+let numero3 = 30
+let numero4 = 15
+
+let bool1 = numero1 < numero2 // 5 < 15 --> true
+
+console.log(numero2 > numero1) // 15 > 5 --> true
+console.log(numero3 < numero1) // 30 < 5 --> false
+console.log(numero2 <= numero4) // 15 <= 15 --> true
+console.log(numero4 === numero3) // 15 === 30 --> false
+
+// l'operatore == confronta il VALORE ma non il TIPO
+console.log(100 == '100') // true!
+
+// l'operatore === confronta il VALORE e anche il TIPO!
+console.log(100 === '100') // false!
+
+let bool2 = numero3 === numero4 // 30 === 15 --> false
+
+let carrello = 35
+let data = '28/11/2025'
+
+// per avere uno sconto del black friday devono verificarsi CONTEMPORANEAMENTE
+// queste due condizioni: carrello almeno 50 e data 28/11/2025
+
+const blackFridaySale = carrello >= 50 && data === '28/11/2025'
+// false && true --> false
+
+let examResult = 17
+let firstName = 'Mario'
+
+// per passare l'esame devi avere almeno un risultato di 18 OPPURE ti devi chiamare "Mario"
+const examIsPassed = examResult >= 18 || firstName === 'Mario'
+// false || true --> true
+
+const result = numero1 === numero2 // 5 === 15 --> false
+console.log(!result)
