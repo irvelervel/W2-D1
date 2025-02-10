@@ -50,8 +50,10 @@ let addition = 10
 addition = addition + number // qua il nuovo valore di addition è già 60!
 console.log(addition) // 60
 addition = addition + number // 110
-
+console.log(addition) // 110
 addition = 100
+addition = addition + number // 150
+
 // variable <-- valore
 
 // TIPI POSSIBILI DI VALORI PER LE VARIABILI
@@ -75,3 +77,47 @@ let w1 = 'ciao'
 let w2 = 'stefano'
 let w3 = w1 + w2 // 'ciao' + 'stefano' --> 'ciaostefano'
 let w4 = w1 + ' ' + w2 // 'ciao' + ' ' + 'stefano' --> 'ciao stefano'
+
+let falseNumber = '0'
+
+let num1 = 100
+let num2 = 80
+console.log(num1 - num2 * 5) // -300
+let num3 = 5
+console.log(num2 / num3) // 80 / 5 -> 16
+
+console.log(100 + undefined) // NaN, Not a Number
+// console.log(Array(16).join('wat' - 1) + ' Batman!') // sigla di Batman!
+
+console.log((100 + 20) * 5) // 600
+
+// OPERATORE /, torna il risultato di una divisione
+console.log(95 / 10) // 9.5
+
+// OPERATORE MODULO %, resto di una divisione
+console.log(95 % 10) // 5
+
+// in JS è una PESSIMA abitudine cambiare il TIPO del dato di una variabile!
+let myName = 'Stefano'
+myName = 'Andrea'
+myName = 'Giovanni'
+// myName = 100 // <-- JS non da errore! ma è una pessima abitudine, NON IMPARATELA :)
+let newNumber = 100
+
+// COSTANTI
+const epicodeURL = 'https://www.epicode.com'
+const pi = 3.14
+
+// epicodeURL = 'https://www.google.com' // <-- ERRORE
+// pi = 30 // <-- ERRORE
+
+const newPi = pi + number // 53.14
+
+// le COSTANTI vanno sempre inizializzate, altrimenti sono inutili!
+// const myConstant // inutile! valore undefined iniziale che non potrà mai cambiare :(
+
+let newVariable = 100
+
+const fixedValue = newVariable + 1 // 101
+
+console.log(fixedValue)
